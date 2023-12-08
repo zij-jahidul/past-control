@@ -59,14 +59,14 @@
 }
 
 .team-member-card {
-  background-color: #fff;
+  background-color: #040720;
   border: 1px solid #e0dfdd;
   height: 100%;
 }
 
 .team-member-card .team-member-card-thumb {
   position: relative;
-  background-color: #eeeeee;
+  background-color: #040720;
   text-align: center;
   padding: 5px;
   z-index: 0;
@@ -100,7 +100,7 @@
   max-height: 100%;
   overflow: hidden;
   padding: 10px;
-  background-color: #eeeeee;
+  background-color: #040720;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,6 +147,10 @@
   .team-member-name
   + .team-member-designation {
   margin-top: 5px;
+}
+
+p {
+    color: #fff !important;
 }
 
 .team-member-card .team-member-card-body .team-member-designation {
@@ -1984,7 +1988,8 @@ height: 33px;
 }
 
 .inner-no-banner {
-    background-color: #cecece;
+    background-color: #040720;
+    color: #fff;
 }
 
 .inner-no-banner .banner-content {
@@ -2001,11 +2006,11 @@ height: 33px;
 }
 
 .inner-no-banner .breadcrumb a, .inner-no-banner .breadcrumb em {
-    color: #000 !important;
+    color: #fff !important;
 }
 
 .inner-no-banner .breadcrumb li:not(:last-child):after {
-    color: #000 !important;
+    color: #fff !important;
 }
 
 .inner-no-banner .breadcrumb li:not(:last-child) a:after {
@@ -2021,7 +2026,8 @@ height: 33px;
 }
 
 .review-box .card {
-  background-color: #ffffff;
+  background-color: #040720;
+  color: #fff;
   border: 1px solid #f3f3f3;
   box-shadow: 0 9px 35px 0 rgba(26, 47, 106, 0.07);
   flex-basis: 100%;
@@ -6895,7 +6901,8 @@ body {
 .dvLayout {
     position: relative;
 }
-#mainSiteContent,.commonPrefooter {overflow: hidden;}
+#mainSiteContent,.commonPrefooter {overflow: hidden; background: #040720;
+color: #fff;}
 
 a {
     color: #0b57d0;
@@ -7174,6 +7181,7 @@ a.common-btn:hover span {
 @media all and (min-width: 767px) {
     .phone-details span {
         letter-spacing: 1.2px;
+        color: #fff;
     }
 }
 
@@ -7340,7 +7348,7 @@ a.common-btn:hover span {
     right: 0;
     top: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgb(3 64 115 / 60%), rgb(41 61 102 / 40%));
+    background: #040720;
 }
 
 .client-service h5 a {
@@ -7414,36 +7422,16 @@ ul.cities li a {
     border-style: solid;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer-upper {
-    background: #000000;
+    background: #040720;
+    color: #fff;
     padding: 40px 0;
 }
 
 .footer-bottom {
     padding: 15px 0;
-    background: whitesmoke;
-    color: #000;
+    background: #040720;
+    color: #fff;
     font-size: 1.4rem;
     border-top: 1px solid #fff;
 }
@@ -7850,7 +7838,7 @@ ul.cities li a {
 }
 
 .nav-item.active a.nav-link.collapsed {
-    background: #eeeeee;
+    background: #040720;
 }
 
 .nav-item.active>a.nav-link {
@@ -8108,7 +8096,8 @@ ul.pl-2.nav {
     }
 }.header-area {
     position: sticky;
-    background: #fff;
+    background: #040720;
+    color: #fff;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
 }
 .dvLayout {
@@ -8118,11 +8107,13 @@ ul.pl-2.nav {
 @media (min-width:992px) {
 
 .single-service.cockroachesControl {
+    background: #040720;
+    color: #fff;
     padding: 8px;
 }
 
     .navbar-light .navbar-nav>li>a {
-        color: var(--site-dark-color);
+        color: #fff;
     }
     .navbar-light .navbar-nav>li:hover>a {
         color: var(--site-primary-color);
@@ -8159,17 +8150,19 @@ ul.pl-2.nav {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #898180, rgba(0, 0, 0, 0));
 }
 .main-menu {
-    background: var(--site-light-color);
+    background: #040720;
+    color: #fff;
+    border: 1px solid #1f1853;
 }
 
 .home-page-banner {
   height: 430px;
 }
 .phone-details {
-    color: var(--site-dark-color);
+    color: #fff;
 }
 .middle-text .medium-heading, .middle-text .small-heading {
-    color: var(--site-dark-color);
+    color: #fff;
 }
 .home-page-banner .item {
   background-position: center bottom;
@@ -8255,16 +8248,16 @@ a.common-btn {
     background: var(--site-secondary-light-color);
 }
 .footer-widget .widget-title {
-    color: var(--site-dark-color);
+    color: #fff;
 }
 .dv-social-links>a>i:hover {
-    color: var(--site-dark-color);
+    color: #fff;
 }
 .links-widget a, .dv-social-links>a:before {
-    color: var(--site-dark-color);
+    color: #fff;
 }
 .footer-widget .fa {
-    color: var(--site-dark-color);
+    color: #fff;
 
 }
 .dv-social-links>a:after {
@@ -8278,14 +8271,16 @@ a.common-btn {
     background: var(--site-light-color);
 }
 .footer-upper {
-    background: var(--site-light-color);
+    background: #040720;
+    color: #fff;
 }
 .single-service {
     box-shadow: 0px 0px 40px 10px rgb(0 0 0 / 5%);
     padding: 24px;
     height: 100%;
-    background: #fff;
+    background: #040720;
     border-radius: 5px;
+    border: 1px solid gray;
 }
 .single-service a.readMore {
     font-size: 15px;
@@ -8554,7 +8549,7 @@ ul.brands-list {
     z-index: -1;
 }
 .links-widget a, .dv-social-links>a:before {
-    color: #1a0dab;
+    color: #fff;
 }
 .links-widget a:hover {
     color: var(--site-primary-color);
@@ -8572,15 +8567,17 @@ ul.brands-list {
     margin-bottom: 5px;
 }
 .client-service:before {
-    background: linear-gradient(180deg, rgb(255 255 255 / 60%), rgb(255 255 255));
+    background: #040720;
+    color: #fff;
 }
 
 .dvCity-list-content {
-    background: whitesmoke;
+    background: #040720;
+    color: #fff;
 }
 
 .dvCity-list-content ul.cities li a {
-    color: #1a0dab;
+    color: #fff;
 }
 
 .dvCity-list-content .cities li {
@@ -8625,7 +8622,7 @@ ul.city-list-items>li>a:after {
 }
 
 .dv-business-location a {
-    color: #1a0dab;
+    color: #fff;
 }
 .inner-banner:before {
     background: #6e6e6e;
@@ -8660,7 +8657,7 @@ ul.city-list-items>li>a:after {
     font-size: 13px;
     padding: 0;
     background: none;
-    color: #1a0dab;
+    color: #fff;
 }
 
 }
@@ -8669,7 +8666,7 @@ ul.city-list-items>li>a:after {
     padding: 75px 0;
 }
 .book {
-    border-radius: 46px 45px 20px 20px;
+    border-radius: 20px;
     background-image: linear-gradient(105deg,rgba(255,255,255,.94) 0,rgba(255,255,255,.94) 50%,transparent 50%),url(../images/office-and-property-safe-from-pest-outbreaks.jpg);
     background-size: cover;
     background-position-x: center;
@@ -8680,6 +8677,9 @@ ul.city-list-items>li>a:after {
 .book__form {
     width: 50%;
     padding: 60px;
+    background: #040720;
+    color: #fff;
+    border-radius: 18px;
 }
 .book__form .form-item:not(:last-child) {
     margin-bottom: 15px;
@@ -8820,7 +8820,7 @@ ul.city-list-items>li>a:after {
 :root {
      --site-primary-color: #e92c19;
      --site-primary-light-color: #fdf0ef;
-     --site-secondary-color: #009247;
+     --site-secondary-color: #040720;
      --site-secondary-light-color: #ebf2d0;
 
      --site-tertiary-color: #ffbe00;
@@ -8883,6 +8883,8 @@ h6.common-heading {
 /* === common-sec, city-page-common-sec === */
 .py-50,
 .common-sec {
+  background-color: #040720;
+  color: #fff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -8898,7 +8900,8 @@ h6.common-heading {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f9f9f9;
+  background-color: #040720;
+  color: #fff;
   border-bottom: 1px solid #f6f6f6;
   z-index: -1;
 }
@@ -9153,6 +9156,7 @@ figure.img-box img + figcaption {
 .accordion {
     position: relative;
     border-width: 0px;
+    border: 1px solid #1f1853;
 }
 
 .accordion .appointment-form {
@@ -9194,7 +9198,8 @@ figure.img-box img + figcaption {
     font-size: 16px;
     line-height: 27px;
     padding-right: 40px;
-    background: #ffffff;
+    background-color: #040720 !important;
+    color: #fff;
     border: 1px solid rgba(0,0,0,0.12);
     box-shadow: 0 1px 5px rgba(0,0,0,0.15);
 }
