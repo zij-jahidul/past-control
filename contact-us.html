@@ -14,42 +14,6 @@
     <meta name="keywords" content="" />
     <!-- Schema Data starts -->
 
-    <!-- <script type='application/ld+json'>
-    {
-        "@context": "http://www.schema.org",
-        "@type": "LocalBusiness",
-        "name": "SumonBD Pest Control Ltd",
-        "url": "https://www.zijdev.com/",
-        "logo": "https://www.zijdev.com./images/logo.png",
-        "image": "https://www.zijdev.com/images/pestcontrolbd-open-graph.jpg",
-        "description": "Pest Control Service Company in Dhaka Bangladesh",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Suite # A-3, House # 57 Road # 04, Block # C Banani",
-            "addressLocality": "Banani",
-            "addressRegion": "Dhaka",
-            "postalCode": "1212",
-            "addressCountry": "Bangladesh"
-        },
-        "priceRange": "$$",
-        "telephone": "01714-895074",
-        "openingHours": "Mo, Tu, We, Th, Fr, Sa, Su  09:00-19:00",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Customer support & query",
-            "telephone": "01714-895074"
-        },
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "13" },
-        "review": {
-            "@type": "Review",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "author": { "@type": "Person", "name": "Mushrif Ahmed Omi" },
-            "datePublished": "2018-10-10",
-            "description": "Excellent service. The employees are very well mannered and thorough."
-        }
-    }
-</script> -->
-
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://www.zijdev.com/">
     <meta property="og:type" content="website">
@@ -208,137 +172,11 @@
                                 <p><small>Should you have any question, feel free to contact us any time. We will
                                         get back to you as soon as can!</small></p>
                             </div>
-                            <script>
-                                // Check number value min to max
-                                function value_check(value, min, max, id) {
-                                    if (parseInt(value) < 0 || isNaN(value)) {
-                                        alert('Please enter valid number.');
-                                        $(id).val('');
-                                    }
-                                    else if (parseInt(value) > 100) {
-                                        alert('Number can not be greater than 100.');
-                                        $(id).val('');
-                                    }
-                                }
 
-                                function containsAnyletter(phoneNumber) {
-                                    return /[a-zA-Z]/.test(phoneNumber);
-                                }
-
-                                function formatPhoneNumber(phoneNumber) {
-                                    let formatedPhone;
-                                    let formatedPhoneLength;
-
-                                    if (containsAnyletter(phoneNumber)) {
-                                        return false;
-                                    }
-
-                                    formatedPhone = phoneNumber.replace(/[^\d]/g, '');
-                                    formatedPhoneLength = formatedPhone.length;
-
-                                    if (formatedPhone.length > 9 && formatedPhone.length < 15) {
-                                        return formatedPhone;
-                                    }
-                                    return false;
-                                }
-
-                                function isPhoneNumberValid(event) {
-                                    let formElement = event.target; // Get the form element
-                                    let phoneDOMId = formElement.querySelector('#phoneNumber[required]') || null;
-                                    let phoneDOMIdTwo = formElement.querySelector('#phoneNumberTwo[required]') || null;
-
-                                    // Phone number validation one
-                                    if (phoneDOMId) {
-                                        let phoneNumberError = formElement.querySelector('#displayPhoneNumberError');
-                                        let phoneNumber = phoneDOMId.value;
-                                        let isValidPhone = formatPhoneNumber(phoneNumber);
-
-                                        if (!isValidPhone) {
-                                            event.preventDefault();
-                                            phoneNumberError.style.display = '';
-                                            phoneNumberError.innerHTML = 'Please enter a valid phone number.';
-                                            phoneDOMId.focus();
-                                            return false;
-                                        }
-                                        else {
-                                            phoneNumberError.innerHTML = '';
-                                            phoneNumberError.style.display = 'none';
-                                        }
-                                    }
-                                    // Phone number validation two
-                                    if (phoneDOMIdTwo) {
-                                        let phoneNumberErrorTwo = formElement.querySelector('#displayPhoneNumberErrorTwo');
-                                        let phoneNumberTwo = phoneDOMIdTwo.value;
-                                        let isValidPhoneTwo = formatPhoneNumber(phoneNumberTwo);
-
-                                        if (!isValidPhoneTwo) {
-                                            event.preventDefault();
-                                            phoneNumberErrorTwo.style.display = '';
-                                            phoneNumberErrorTwo.innerHTML = 'Please enter a valid phone number.';
-                                            phoneDOMIdTwo.focus();
-                                            return false;
-                                        }
-                                        else {
-                                            phoneNumberErrorTwo.innerHTML = '';
-                                            phoneNumberErrorTwo.style.display = 'none';
-                                        }
-                                    }
-                                }
-
-
-                                function isCheckBoxSelected(event) {
-                                    let isChecked = false;
-                                    let itemForm = document.getElementById('request-form') || null;
-
-                                    if (itemForm != null) {
-                                        let checkBoxes = itemForm.querySelectorAll('input[type=\"checkbox\"]');
-                                        let displayCheckboxError = document.getElementById('displayCheckboxError');
-
-                                        checkBoxes.forEach(item => {
-                                            if (item.checked) {
-                                                isChecked = true;
-                                            }
-                                        });
-
-                                        if (!isChecked) {
-                                            event.preventDefault();
-                                            displayCheckboxError.style.display = 'block';
-                                            displayCheckboxError.innerHTML = 'Please select at least one.';
-                                            displayCheckboxError.focus();
-                                            return false;
-                                        }
-                                        else {
-                                            displayCheckboxError.innerHTML = '';
-                                            displayCheckboxError.style.display = 'none';
-                                        }
-                                    }
-                                }
-
-                                function validate(event) {
-                                    isPhoneNumberValid(event);
-                                    isCheckBoxSelected(event);
-                                    return true;
-                                }
-                            </script>
-                            <form method="post" action="/about-us/contact-confirmation"
-                                onsubmit="return validate( event )  ">
+                            <form method="post" action="#" onsubmit="return validate( event )  ">
                                 <input type="hidden" name="current_time" value="2023-12-08 12:37:19am" />
                                 <input type="hidden" name="honeypot" value="" style="display: none;" />
-                                <input type="hidden" name="google_recaptcha_v3_token"
-                                    id="google_recaptcha_v3_token_354846" />
-                                <script
-                                    src="https://www.google.com/recaptcha/api.js?render=6Ldlwj8gAAAAAPbVIQxdquxKq6LTX_99YG0GQB_8"></script>
-                                <script>
-                                    grecaptcha.ready(
-                                        function () {
-                                            grecaptcha.execute('6Ldlwj8gAAAAAPbVIQxdquxKq6LTX_99YG0GQB_8', { action: 'contact' }).then(
-                                                function (token) {
-                                                    document.getElementById('google_recaptcha_v3_token_354846').value = token;
-                                                }
-                                            );
-                                        }
-                                    );
-                                </script>
+
                                 <div class="dvForm">
                                     <div class="muted">
                                         <p>Fields with (<span class="red">*</span>) are required.</p>
@@ -780,6 +618,119 @@
                 if (document.getElementById('mainSiteContent').querySelectorAll('.container').length == 0) {
                     document.getElementById('mainSiteContent').classList.add('container', 'py-5'); // add container and padding top bottom class
                 }
+            }
+        </script>
+
+        <script>
+            // Check number value min to max
+            function value_check(value, min, max, id) {
+                if (parseInt(value) < 0 || isNaN(value)) {
+                    alert('Please enter valid number.');
+                    $(id).val('');
+                }
+                else if (parseInt(value) > 100) {
+                    alert('Number can not be greater than 100.');
+                    $(id).val('');
+                }
+            }
+
+            function containsAnyletter(phoneNumber) {
+                return /[a-zA-Z]/.test(phoneNumber);
+            }
+
+            function formatPhoneNumber(phoneNumber) {
+                let formatedPhone;
+                let formatedPhoneLength;
+
+                if (containsAnyletter(phoneNumber)) {
+                    return false;
+                }
+
+                formatedPhone = phoneNumber.replace(/[^\d]/g, '');
+                formatedPhoneLength = formatedPhone.length;
+
+                if (formatedPhone.length > 9 && formatedPhone.length < 15) {
+                    return formatedPhone;
+                }
+                return false;
+            }
+
+            function isPhoneNumberValid(event) {
+                let formElement = event.target; // Get the form element
+                let phoneDOMId = formElement.querySelector('#phoneNumber[required]') || null;
+                let phoneDOMIdTwo = formElement.querySelector('#phoneNumberTwo[required]') || null;
+
+                // Phone number validation one
+                if (phoneDOMId) {
+                    let phoneNumberError = formElement.querySelector('#displayPhoneNumberError');
+                    let phoneNumber = phoneDOMId.value;
+                    let isValidPhone = formatPhoneNumber(phoneNumber);
+
+                    if (!isValidPhone) {
+                        event.preventDefault();
+                        phoneNumberError.style.display = '';
+                        phoneNumberError.innerHTML = 'Please enter a valid phone number.';
+                        phoneDOMId.focus();
+                        return false;
+                    }
+                    else {
+                        phoneNumberError.innerHTML = '';
+                        phoneNumberError.style.display = 'none';
+                    }
+                }
+                // Phone number validation two
+                if (phoneDOMIdTwo) {
+                    let phoneNumberErrorTwo = formElement.querySelector('#displayPhoneNumberErrorTwo');
+                    let phoneNumberTwo = phoneDOMIdTwo.value;
+                    let isValidPhoneTwo = formatPhoneNumber(phoneNumberTwo);
+
+                    if (!isValidPhoneTwo) {
+                        event.preventDefault();
+                        phoneNumberErrorTwo.style.display = '';
+                        phoneNumberErrorTwo.innerHTML = 'Please enter a valid phone number.';
+                        phoneDOMIdTwo.focus();
+                        return false;
+                    }
+                    else {
+                        phoneNumberErrorTwo.innerHTML = '';
+                        phoneNumberErrorTwo.style.display = 'none';
+                    }
+                }
+            }
+
+
+            function isCheckBoxSelected(event) {
+                let isChecked = false;
+                let itemForm = document.getElementById('request-form') || null;
+
+                if (itemForm != null) {
+                    let checkBoxes = itemForm.querySelectorAll('input[type=\"checkbox\"]');
+                    let displayCheckboxError = document.getElementById('displayCheckboxError');
+
+                    checkBoxes.forEach(item => {
+                        if (item.checked) {
+                            isChecked = true;
+                        }
+                    });
+
+                    if (!isChecked) {
+                        event.preventDefault();
+                        displayCheckboxError.style.display = 'block';
+                        displayCheckboxError.innerHTML = 'Please select at least one.';
+                        displayCheckboxError.focus();
+                        return false;
+                    }
+                    else {
+                        displayCheckboxError.innerHTML = '';
+                        displayCheckboxError.style.display = 'none';
+                    }
+                }
+            }
+
+            function validate(event) {
+                isPhoneNumberValid(event);
+                isCheckBoxSelected(event);
+                return true;
             }
         </script>
     </div>
